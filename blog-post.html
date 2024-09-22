@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📰</text></svg>"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Udacity Blog</title>
+  </head>
+  <body>
+    <div class="blog-container">
+      <header class="header">
+        <h1 class="logo">The Udacian Blog</h1>
+
+        <div class="header__search">
+          <input type="text" placeholder="Search..." id="search" />
+          <label for="search"
+            ><img src="assests/svg/search.svg" alt="search"
+          /></label>
+        </div>
+
+        <form class="theme-switcher">
+          <fieldset>
+            <legend>Theme</legend>
+            <input type="radio" id="light" name="theme" checked />
+            <label for="light"
+              ><img src="assests/svg/sun.svg" alt="light"
+            /></label>
+            <input type="radio" id="dark" name="theme" />
+            <label for="dark"
+              ><img src="assests/svg/moon.svg" alt="dark"
+            /></label>
+          </fieldset>
+        </form>
+      </header>
+      <main class="main-post">
+        <section class="breadcrumbs">
+          <ul>
+            <li><a href="index.html">Home</a> <span> / </span></li>
+            <li><a href="#">Post</a></li>
+          </ul>
+        </section>
+        <article class="post">
+          <header class="post__header">
+            <div class="post__image">
+              <img
+                src="./assests/img/article-3-wide.jpg"
+                alt="post image of fashion"
+              />
+            </div>
+            <div class="post__meta">
+              <h2 class="post__title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, quos.
+              </h2>
+              <div class="post__author">
+                <img src="assests/img/author-1.jpg" alt="author image" />
+                <div class="post__author-info">
+                  <div class="author">
+                    <p class="post__author-name">John Doe</p>
+                    <p class="post__author-role">Fashion Blogger</p>
+                  </div>
+                  <div class="post__criteria">
+                    <p class="post__publish-date">2024-01-01</p>
+                    <p class="post__read-time">5 min read</p>
+                  </div>
+                  <p class="catagory">fashion</p>
+                </div>
+              </div>
+            </div>
+          </header>
+          <section class="post__content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Fugit, repellendus voluptate ipsa porro voluptatibus dicta, ab
+              distinctio rem ratione sunt, molestias sit totam culpa cum? Error
+              quidem minus non iste.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quos. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Adipisci, harum atque officiis similique optio, reiciendis
+              temporibus expedita voluptas quasi alias magni ratione praesentium
+              ipsum laudantium et, natus reprehenderit nam. Voluptate!
+            </p>
+            <section class="post__quote">
+              <blockquote cite="awsomequotes.com">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, quos."
+                <span>- John Doe</span>
+              </blockquote>
+            </section>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Esse corporis in, saepe animi quos laudantium qui nam corrupti!
+              Atque earum delectus quod minima rem pariatur magni quos
+              distinctio est rerum!
+            </p>
+            <section class="ads__block">
+              <p>Your Ad Block</p>
+            </section>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Excepturi architecto quibusdam, provident totam aliquid,
+              repudiandae magnam et amet ipsa cum dolor quod voluptates aperiam
+              magni porro illum nam fugiat quas!
+            </p>
+          </section>
+
+          <section class="post__share">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="assests/svg/like.svg" alt="like" />
+                </a>
+                <span class="tooltip-text">Like</span>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assests/svg/share.svg" alt="share" />
+                </a>
+                <span class="tooltip-text">Share Link</span>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assests/svg/facebook.svg" alt="facebook" />
+                </a>
+                <span class="tooltip-text">Share on Facebook</span>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assests/svg/twitter.svg" alt="twitter" />
+                </a>
+                <span class="tooltip-text">Share on Twitter</span>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assests/svg/linkedin.svg" alt="linkedin" />
+                </a>
+                <span class="tooltip-text">Share on LinkedIn</span>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <section class="post__comments">
+          <h3>Comments</h3>
+          <form action="">
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button type="submit">Comment</button>
+          </form>
+        </section>
+      </main>
+      <aside class="sidebar">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, alias
+        perferendis possimus repudiandae autem error fugit ullam quisquam
+        laudantium a dolores, sint voluptas eligendi iste odit nesciunt non
+        voluptatum debitis. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Placeat, aspernatur. Saepe iusto iste expedita optio nam esse
+        laboriosam nemo, sed voluptatum quia perspiciatis nulla sapiente
+        repellat adipisci sit in consequatur! Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Voluptatibus ipsa ut dolorem nemo rem,
+        dignissimos optio, sequi pariatur accusamus expedita culpa harum
+        voluptates ducimus doloribus praesentium tempore. Neque, labore at!
+      </aside>
+      <footer class="footer">
+        <div class="footer__content">
+          <h3 class="logo">The Udacian Blog</h3>
+          <ul class="footer__links">
+            <li class="footer__link"><a href="#featured">Featured</a></li>
+            <li class="footer__link"><a href="#catalog">Catalog</a></li>
+            <li class="footer__link"><a href="#">About</a></li>
+          </ul>
+          <ul class="footer__socials">
+            <li class="footer__social">
+              <a href="#"
+                ><img src="assests/svg/facebook.svg" alt="facebook"
+              /></a>
+            </li>
+            <li class="footer__social">
+              <a href="#"
+                ><img src="assests/svg/twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li class="footer__social">
+              <a href="#"
+                ><img src="assests/svg/instagram.svg" alt="instagram"
+              /></a>
+            </li>
+            <li class="footer__social">
+              <a href="#"
+                ><img src="assests/svg/youtube.svg" alt="youtube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright">
+          © 2024 The Udacian Blog, made by
+          <a href="https://github.com/alaa-electr0n">Alaa Elsayed</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
