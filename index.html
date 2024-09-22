@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📰</text></svg>"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Udacity Blog</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">The Udacian Blog</h1>
+      <nav class="header__nav">
+        <ul>
+          <li class="nav__item"><a href="#featured">Featured</a></li>
+          <li class="nav__item"><a href="#catalog">Catalog</a></li>
+        </ul>
+      </nav>
+      <div class="header__search">
+        <input type="text" placeholder="Search..." id="search" />
+        <label for="search"
+          ><img src="assests/svg/search.svg" alt="search"
+        /></label>
+      </div>
+
+      <form class="theme-switcher">
+        <fieldset>
+          <legend>Theme</legend>
+          <input type="radio" id="light" name="theme" checked />
+          <label for="light"
+            ><img src="assests/svg/sun.svg" alt="light"
+          /></label>
+          <input type="radio" id="dark" name="theme" />
+          <label for="dark"
+            ><img src="assests/svg/moon.svg" alt="dark"
+          /></label>
+        </fieldset>
+      </form>
+    </header>
+    <main class="main">
+      <section class="featured" id="featured">
+        <div class="section__heading">
+          <h2 class="section__title">Featured Posts</h2>
+          <button class="ghost">View All</button>
+        </div>
+        <div class="carosel">
+          <button class="carosel-arrow">
+            <img
+              src="./assests/svg/left-arrow.svg"
+              alt="arrow"
+              class="arrow-left"
+            />
+          </button>
+          <div class="featured__posts">
+            <article class="featured__post">
+              <img
+                class="featured__post-image"
+                src="assests/img/article-1.jpg"
+                alt="blog post about trains"
+              />
+              <div class="featured__post-content">
+                <div class="featured__post-header">
+                  <h3 class="featured__post-title">
+                    <a href="#">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </a>
+                  </h3>
+                  <div class="featured__post-author">
+                    <p class="featured__post-catagory">Vehicles</p>
+                    <p class="featured__post-name">Alaa Elsayed</p>
+                    <p class="featured__post-date">a min ago</p>
+                  </div>
+                </div>
+                <div class="featured__post-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quos.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="featured__post">
+              <img
+                class="featured__post-image"
+                src="assests/img/article-4.jpg"
+                alt="blog post about cooking"
+              />
+              <div class="featured__post-content">
+                <div class="featured__post-header">
+                  <h3 class="featured__post-title">
+                    <a href="#">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </a>
+                  </h3>
+                  <div class="featured__post-author">
+                    <p class="featured__post-catagory">Cooking</p>
+                    <p class="featured__post-name">Erwin Smith</p>
+                    <p class="featured__post-date">2024-02-20</p>
+                  </div>
+                </div>
+                <div class="featured__post-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quos.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- add more posts here -->
+          </div>
+          <button class="carosel-arrow">
+            <img
+              src="./assests/svg/right-arrow.svg"
+              alt="arrow"
+              class="arrow-right"
+            />
+          </button>
+        </div>
+      </section>
+      <section class="catalog" id="catalog">
+        <div class="section__heading">
+          <h2 class="section__title">Catalog</h2>
+          <button class="ghost">View All</button>
+        </div>
+        <div class="catalog__posts">
+          <!-- posts -->
+          <article class="featured__post">
+            <img
+              class="featured__post-image"
+              src="assests/img/article-5-high.jpg"
+              alt="blog post about nature"
+            />
+            <div class="featured__post-content">
+              <div class="featured__post-header">
+                <h3 class="featured__post-title">
+                  <a href="#">
+                    Lo rem ipsum dolor sit amet consectetur adipisicing elit.
+                  </a>
+                </h3>
+                <div class="featured__post-author">
+                  <p class="featured__post-catagory">Travel</p>
+                  <p class="featured__post-name">Mayar Fahmy</p>
+                  <p class="featured__post-date">22-9-2024</p>
+                </div>
+              </div>
+              <div class="featured__post-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur, laboriosam error voluptatum unde aliquam
+                  deserunt? Sint, fugiat. Eveniet voluptatem accusamus
+                  consequuntur?...
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="featured__post">
+            <img
+              class="featured__post-image"
+              src="assests/img/article-6.jpg"
+              alt="blog post about trains"
+            />
+            <div class="featured__post-content">
+              <div class="featured__post-header">
+                <h3 class="featured__post-title">
+                  <a href="#">
+                    Lo rem ipsum dolor sit amet consectetur adipisicing elit.
+                  </a>
+                </h3>
+                <div class="featured__post-author">
+                  <p class="featured__post-catagory">Travel</p>
+                  <p class="featured__post-name">Katarina Petrova</p>
+                  <p class="featured__post-date">a min ago</p>
+                </div>
+              </div>
+              <div class="featured__post-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, quos.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="featured__post">
+            <img
+              class="featured__post-image"
+              src="assests/img/article-2.jpg"
+              alt="blog post about trains"
+            />
+            <div class="featured__post-content">
+              <div class="featured__post-header">
+                <h3 class="featured__post-title">
+                  <a href="#">
+                    Lo rem ipsum dolor sit amet consectetur adipisicing elit.
+                  </a>
+                </h3>
+                <div class="featured__post-author">
+                  <p class="featured__post-catagory">Nature</p>
+                  <p class="featured__post-name">Alaa Elsayed</p>
+                  <p class="featured__post-date">13-10-2024</p>
+                </div>
+              </div>
+              <div class="featured__post-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, quos.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <h3 class="logo">The Udacian Blog</h3>
+        <ul class="footer__links">
+          <li class="footer__link"><a href="#">Featured</a></li>
+          <li class="footer__link"><a href="#">Catalog</a></li>
+          <li class="footer__link"><a href="#">About</a></li>
+        </ul>
+        <ul class="footer__socials">
+          <li class="footer__social">
+            <a href="#"
+              ><img src="assests/svg/facebook.svg" alt="facebook"
+            /></a>
+          </li>
+          <li class="footer__social">
+            <a href="#"><img src="assests/svg/twitter.svg" alt="twitter" /></a>
+          </li>
+          <li class="footer__social">
+            <a href="#"
+              ><img src="assests/svg/instagram.svg" alt="instagram"
+            /></a>
+          </li>
+          <li class="footer__social">
+            <a href="#"><img src="assests/svg/youtube.svg" alt="youtube" /></a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copyright">
+        © 2024 The Udacian Blog, made by
+        <a href="https://github.com/alaa-electr0n">Alaa Elsayed</a>
+      </p>
+    </footer>
+  </body>
+</html>
