@@ -67,7 +67,7 @@
                 <img src="assests/img/author-1.jpg" alt="author image" />
                 <div class="post__author-info">
                   <div class="author">
-                    <p class="post__author-name">John Doe</p>
+                    <p class="post__author-name">Levi Ackramann</p>
                     <p class="post__author-role">Fashion Blogger</p>
                   </div>
                   <div class="post__criteria">
@@ -98,7 +98,7 @@
               <blockquote cite="awsomequotes.com">
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam, quos."
-                <span>- John Doe</span>
+                <span>- Erin Yeger</span>
               </blockquote>
             </section>
             <p>
@@ -155,37 +155,108 @@
           </section>
         </article>
         <section class="post__comments">
-          <h3>Comments</h3>
-          <form action="">
+          <h3>Leave a comment</h3>
+          <form>
             <textarea
               name="comment"
               id="comment"
-              cols="30"
+              cols="50"
               rows="10"
+              placeholder="Share your thoughts..."
             ></textarea>
-            <button type="submit">Comment</button>
+            <button type="submit" class="fill">Comment</button>
           </form>
         </section>
+        <section class="post__comments-list">
+          <article class="comment">
+            <div class="comment__header">
+              <img src="assests/svg/user.svg" alt="author image" />
+              <span class="comment__user">Erin Yeger</span>
+            </div>
+            <p class="comment__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quos.
+            </p>
+          </article>
+          <article class="comment">
+            <div class="comment__header">
+              <img src="assests/svg/user.svg" alt="author image" />
+              <span class="comment__user">Oliver Queen</span>
+            </div>
+            <p class="comment__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Necessitatibus reiciendis mollitia, dolore praesentium
+              voluptatibus reprehenderit? Eveniet modi minus enim. Libero et
+              vel, corporis distinctio provident amet eum voluptas tempore!
+              Veniam?
+            </p>
+          </article>
+
+          <article class="comment">
+            <div class="comment__header">
+              <img src="assests/svg/user.svg" alt="author image" />
+              <span class="comment__user">Armin B. </span>
+            </div>
+            <p class="comment__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Necessitatibus reiciendis mollitia, dolore praesentium
+              voluptatibus reprehenderit? Eveniet modi minus enim.
+            </p>
+          </article>
+        </section>
       </main>
+
       <aside class="sidebar">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, alias
-        perferendis possimus repudiandae autem error fugit ullam quisquam
-        laudantium a dolores, sint voluptas eligendi iste odit nesciunt non
-        voluptatum debitis. Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit. Placeat, aspernatur. Saepe iusto iste expedita optio nam esse
-        laboriosam nemo, sed voluptatum quia perspiciatis nulla sapiente
-        repellat adipisci sit in consequatur! Lorem ipsum dolor sit, amet
-        consectetur adipisicing elit. Voluptatibus ipsa ut dolorem nemo rem,
-        dignissimos optio, sequi pariatur accusamus expedita culpa harum
-        voluptates ducimus doloribus praesentium tempore. Neque, labore at!
+        <section class="post__related">
+          <h3>Related Posts</h3>
+          <ul>
+            <li>
+              <img src="assests/img/article-6.jpg" alt="related post image" />
+              <div class="related-post__info">
+                <h4><a href="#">Lorem ipsum dolor sit </a></h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio inventore non ullam iure nihil.
+                </p>
+                <span class="catagory">Travel</span>
+              </div>
+            </li>
+            <li>
+              <img src="./assests/img/article-7.jpg" alt="related post image" />
+              <div class="related-post__info">
+                <h4><a href="#">Lorem ipsum dolor sit</a></h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio inventore non ullam iure nihil.
+                </p>
+                <span class="catagory">Travel</span>
+              </div>
+            </li>
+            <li>
+              <img src="./assests/img/article-8.jpg" alt="related post image" />
+              <div class="related-post__info">
+                <h4><a href="#">Lorem ipsum dolor sit </a></h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio inventore non ullam iure nihil.
+                </p>
+                <span class="catagory">Travel</span>
+              </div>
+            </li>
+          </ul>
+        </section>
       </aside>
       <footer class="footer">
         <div class="footer__content">
           <h3 class="logo">The Udacian Blog</h3>
           <ul class="footer__links">
-            <li class="footer__link"><a href="#featured">Featured</a></li>
-            <li class="footer__link"><a href="#catalog">Catalog</a></li>
-            <li class="footer__link"><a href="#">About</a></li>
+            <li class="footer__link">
+              <a href="./index.html#featured">Featured</a>
+            </li>
+            <li class="footer__link">
+              <a href="./index.html#catalog">Catalog</a>
+            </li>
+            <li class="footer__link"><a href="./index.html">About</a></li>
           </ul>
           <ul class="footer__socials">
             <li class="footer__social">
