@@ -149,7 +149,7 @@ input {
 
     & a {
       color: var(--secondary-color);
-      margin-left: 1ch;
+      margin-left: 2px;
     }
   }
 }
@@ -160,8 +160,10 @@ input {
     gap: 1.2rem;
   }
   .footer .footer__copyright {
-    padding: 1.2rem 0;
+    padding: 1rem 0;
     font-size: var(--small-text-size);
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
