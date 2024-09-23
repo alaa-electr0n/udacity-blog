@@ -14,7 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+    <link rel="stylesheet" href="styles/componenets.css" />
+    <link rel="stylesheet" href="styles/hompage.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <title>Udacity Blog</title>
   </head>
   <body>
@@ -22,8 +27,15 @@
       <h1 class="logo">The Udacian Blog</h1>
       <nav class="header__nav">
         <ul>
-          <li class="nav__item"><a href="#featured">Featured</a></li>
-          <li class="nav__item"><a href="#catalog">Catalog</a></li>
+          <li class="nav__item">
+            <a href="#featured">Featured</a>
+          </li>
+          <li class="nav__item">
+            <a href="#catalog">Catalog</a>
+          </li>
+          <li class="nav__item">
+            <a href="#subscribe">Subscribe</a>
+          </li>
         </ul>
       </nav>
       <div class="header__search">
@@ -219,6 +231,52 @@
             </div>
           </article>
         </div>
+      </section>
+
+      <section class="subscribe" id="subscribe">
+        <h2 class="section__title">Subscribe to our newsletter</h2>
+        <div class="subscribe__bg"></div>
+        <form class="subscribe__form">
+          <div class="username">
+            <label for="name">Name: </label>
+            <input id="name" placeholder="Your Name..." type="text" />
+          </div>
+          <div class="email">
+            <label for="email">Email: </label>
+            <input id="email" placeholder="Your Email..." type="email" />
+          </div>
+          <div class="catagory-checks">
+            <h3 for="catagory">Check your Favorite Catagory</h3>
+
+            <div>
+              <input id="nature" name="catagory" type="checkbox" />
+              <label for="nature">Nature</label>
+            </div>
+
+            <div>
+              <input id="travel" name="catagory" type="checkbox" />
+              <label for="travel">Travel</label>
+            </div>
+            <div>
+              <input id="food" name="catagory" type="checkbox" />
+              <label for="food">Food</label>
+            </div>
+            <div>
+              <input id="shopping" name="catagory" type="checkbox" />
+              <label for="shopping">Shopping</label>
+            </div>
+            <div>
+              <input id="fashion" name="catagory" type="checkbox" />
+              <label for="fashion">Fashion</label>
+            </div>
+            <div>
+              <input id="vehicles" name="catagory" type="checkbox" />
+              <label for="vehicles">Vehicles</label>
+            </div>
+          </div>
+
+          <button type="submit" class="fill">Subscribe</button>
+        </form>
       </section>
     </main>
 
