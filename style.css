@@ -1062,7 +1062,7 @@ button.fill {
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 640px) and (max-width: 980px) {
   .sidebar {
     width: 80%;
     margin: 0 auto;
@@ -1070,11 +1070,35 @@ button.fill {
   .sidebar .post__related ul {
     display: flex;
     gap: 1.2rem;
+    width: 90%;
+    margin: 0 auto;
   }
   .sidebar .post__related ul li {
     flex-direction: row;
   }
   .sidebar .post__related ul li img {
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .sidebar {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .blog-container .main-post .post .post__content {
+    padding: 0;
+  }
+
+  .blog-container .main-post .post .post__header .post__meta .post__author {
+    display: block;
+    & .post__author-info {
+      display: block;
+    }
+    & .post__criteria {
+      justify-content: center;
+      gap: 1.2rem;
+    }
   }
 }
