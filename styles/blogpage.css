@@ -1,3 +1,5 @@
+@import url("./utils.css");
+
 .blog-container {
   display: grid;
   grid-template-columns: 1fr 1fr 25rem;
@@ -152,7 +154,8 @@
         & p {
           text-wrap: balance;
         }
-        & blockquote {
+        & .post__quote {
+          /* display: block; */
           background-color: var(--span-text-color);
           padding: 1.2rem 2.4rem;
           border-radius: 1.2rem;
@@ -163,9 +166,10 @@
           /* text-wrap: balance; */
           display: flex;
           flex-direction: column;
-          & span {
-            margin-left: 1ch;
+          & p {
+            margin-left: 2px;
             align-self: flex-end;
+            font-style: italic;
           }
         }
         & .ads__block {
@@ -182,6 +186,8 @@
           align-items: center;
           justify-content: center;
           font-weight: 600;
+          text-decoration: underline;
+          font-weight: bold;
         }
       }
     }
@@ -319,12 +325,12 @@
     text-align: center;
   }
 
-  & ul {
+  & .sidebar__post-list {
     display: flex;
     flex-direction: column;
     gap: 2.1rem;
   }
-  & ul li {
+  & .sidebar__post-list figure {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
@@ -407,16 +413,16 @@
     width: 80%;
     margin: 0 auto;
   }
-  .sidebar .post__related ul {
+  .sidebar .post__related .sidebar__post-list {
     display: flex;
     gap: 1.2rem;
     width: 90%;
     margin: 0 auto;
   }
-  .sidebar .post__related ul li {
+  .sidebar .post__related .sidebar__post-list figure {
     flex-direction: row;
   }
-  .sidebar .post__related ul li img {
+  .sidebar .post__related .sidebar__post-list figure img {
     width: 200px;
   }
 }

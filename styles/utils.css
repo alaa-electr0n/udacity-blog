@@ -1,0 +1,23 @@
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+.text-underlined {
+  text-decoration: underline;
+}
+.quote {
+  display: block;
+  padding: var(--space-inbetween);
+  background-color: var(--secondary-color);
+  padding: var(--space-inbetween);
+  border-radius: var(--space-inbetween);
+  box-shadow: var(--box-shadow-focus);
+  margin-bottom: var(--space-inbetween);
+  & p {
+    font-size: var(--default-text-size);
+    font-style: italic;
+  }
+}

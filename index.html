@@ -14,11 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/theme.css" />
-    <link rel="stylesheet" href="styles/componenets.css" />
-    <link rel="stylesheet" href="styles/hompage.css" />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="./main.css" />
     <title>Udacity Blog</title>
   </head>
   <body>
@@ -65,7 +61,7 @@
           <button class="ghost">View All</button>
         </div>
         <div class="carosel">
-          <button class="carosel-arrow">
+          <button class="carosel-arrow" type="button">
             <img
               src="./assests/svg/left-arrow.svg"
               alt="arrow"
@@ -73,13 +69,13 @@
             />
           </button>
           <div class="featured__posts">
-            <article class="featured__post">
+            <figure class="featured__post">
               <img
                 class="featured__post-image"
                 src="assests/img/article-1.jpg"
                 alt="blog post about trains"
               />
-              <div class="featured__post-content">
+              <figcaption class="featured__post-content">
                 <div class="featured__post-header">
                   <h3 class="featured__post-title">
                     <a href="./blog-post.html">
@@ -98,15 +94,15 @@
                     Quisquam, quos.
                   </p>
                 </div>
-              </div>
-            </article>
-            <article class="featured__post">
+              </figcaption>
+            </figure>
+            <figure class="featured__post">
               <img
                 class="featured__post-image"
                 src="assests/img/article-4.jpg"
                 alt="blog post about cooking"
               />
-              <div class="featured__post-content">
+              <figcaption class="featured__post-content">
                 <div class="featured__post-header">
                   <h3 class="featured__post-title">
                     <a href="./blog-post.html">
@@ -125,12 +121,12 @@
                     Quisquam, quos.
                   </p>
                 </div>
-              </div>
-            </article>
+              </figcaption>
+            </figure>
 
             <!-- add more posts here -->
           </div>
-          <button class="carosel-arrow">
+          <button class="carosel-arrow" role="button">
             <img
               src="./assests/svg/right-arrow.svg"
               alt="arrow"
@@ -139,6 +135,7 @@
           </button>
         </div>
       </section>
+      <!-- catalog -->
       <section class="catalog" id="catalog">
         <div class="section__heading">
           <h2 class="section__title">Catalog</h2>
@@ -146,13 +143,13 @@
         </div>
         <div class="catalog__posts">
           <!-- posts -->
-          <article class="featured__post">
+          <figure class="featured__post">
             <img
               class="featured__post-image"
               src="assests/img/article-5-high.jpg"
               alt="blog post about nature"
             />
-            <div class="featured__post-content">
+            <figcaption class="featured__post-content">
               <div class="featured__post-header">
                 <h3 class="featured__post-title">
                   <a href="./blog-post.html">
@@ -173,15 +170,15 @@
                   consequuntur?...
                 </p>
               </div>
-            </div>
-          </article>
-          <article class="featured__post">
+            </figcaption>
+          </figure>
+          <figure class="featured__post">
             <img
               class="featured__post-image"
               src="assests/img/article-6.jpg"
               alt="blog post about trains"
             />
-            <div class="featured__post-content">
+            <figcaption class="featured__post-content">
               <div class="featured__post-header">
                 <h3 class="featured__post-title">
                   <a href="./blog-post.html">
@@ -200,15 +197,15 @@
                   Quisquam, quos.
                 </p>
               </div>
-            </div>
-          </article>
-          <article class="featured__post">
+            </figcaption>
+          </figure>
+          <figure class="featured__post">
             <img
               class="featured__post-image"
               src="assests/img/article-2.jpg"
               alt="blog post about trains"
             />
-            <div class="featured__post-content">
+            <figcaption class="featured__post-content">
               <div class="featured__post-header">
                 <h3 class="featured__post-title">
                   <a href="blog-post.html">
@@ -227,8 +224,8 @@
                   Quisquam, quos.
                 </p>
               </div>
-            </div>
-          </article>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -308,7 +305,9 @@
       </div>
       <p class="footer__copyright">
         © 2024 The Udacian Blog, made by
-        <a href="https://github.com/alaa-electr0n">Alaa Elsayed</a>
+        <a href="https://github.com/alaa-electr0n"
+          ><strong>Alaa Elsayed</strong></a
+        >
       </p>
     </footer>
   </body>

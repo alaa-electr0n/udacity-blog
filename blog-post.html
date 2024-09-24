@@ -14,12 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/theme.css" />
-    <link rel="stylesheet" href="styles/componenets.css" />
-    <link rel="stylesheet" href="styles/hompage.css" />
-    <link rel="stylesheet" href="styles/blogpage.css" />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="./main.css" />
     <title>Udacity Blog</title>
   </head>
   <body>
@@ -95,32 +90,52 @@
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
               quos. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Adipisci, harum atque officiis similique optio, reiciendis
+              Adipisci,
+              <span class="text-italic"
+                >harum atque officiis similique optio, reiciendis</span
+              >
               temporibus expedita voluptas quasi alias magni ratione praesentium
               ipsum laudantium et, natus reprehenderit nam. Voluptate!
             </p>
-            <section class="post__quote">
-              <blockquote cite="awsomequotes.com">
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quos."
-                <span>- Erin Yeger</span>
-              </blockquote>
-            </section>
             <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
+              enim molestiae
+              <span class="text-bold"
+                >necessitatibus blanditiis ipsa error. Recusandae beatae, dolor
+                distinctio</span
+              >
+              dolorum possimus quasi deleniti earum porro dignissimos vel ipsam
+              dicta doloremque!
+            </p>
+
+            <section class="post__quote">
+              <q class="quote" cite="awsomequotes.com">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, quos.
+              </q>
+              <p><strong>- Erin Yeger</strong></p>
+            </section>
+            <p class="text-italic">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
               quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Esse corporis in, saepe animi quos laudantium qui nam corrupti!
+              Esse corporis in,
+              <span class="text-bold">
+                saepe animi quos laudantium qui nam corrupti!</span
+              >
               Atque earum delectus quod minima rem pariatur magni quos
               distinctio est rerum!
             </p>
             <section class="ads__block">
-              <p>Your Ad Block</p>
+              <p>Your Ads Block</p>
             </section>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Excepturi architecto quibusdam, provident totam aliquid,
-              repudiandae magnam et amet ipsa cum dolor quod voluptates aperiam
-              magni porro illum nam fugiat quas!
+              Excepturi architecto quibusdam,
+              <span class="text-bold text-underlined"
+                >provident totam aliquid, repudiandae magnam et amet ipsa cum
+                dolor quod</span
+              >
+              voluptates aperiam magni porro illum nam fugiat quas!
             </p>
           </section>
 
@@ -214,41 +229,41 @@
       <aside class="sidebar">
         <section class="post__related">
           <h3>Related Posts</h3>
-          <ul>
-            <li>
+          <div class="sidebar__post-list">
+            <figure>
               <img src="assests/img/article-6.jpg" alt="related post image" />
-              <div class="related-post__info">
+              <figcaption class="related-post__info">
                 <h4><a href="#">Lorem ipsum dolor sit </a></h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Distinctio inventore non ullam iure nihil.
                 </p>
                 <span class="catagory">Travel</span>
-              </div>
-            </li>
-            <li>
+              </figcaption>
+            </figure>
+            <figure>
               <img src="./assests/img/article-7.jpg" alt="related post image" />
-              <div class="related-post__info">
+              <figcaption class="related-post__info">
                 <h4><a href="#">Lorem ipsum dolor sit</a></h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Distinctio inventore non ullam iure nihil.
                 </p>
                 <span class="catagory">Travel</span>
-              </div>
-            </li>
-            <li>
+              </figcaption>
+            </figure>
+            <figure>
               <img src="./assests/img/article-8.jpg" alt="related post image" />
-              <div class="related-post__info">
+              <figcaption class="related-post__info">
                 <h4><a href="#">Lorem ipsum dolor sit </a></h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Distinctio inventore non ullam iure nihil.
                 </p>
                 <span class="catagory">Travel</span>
-              </div>
-            </li>
-          </ul>
+              </figcaption>
+            </figure>
+          </div>
         </section>
       </aside>
       <footer class="footer">
@@ -291,7 +306,9 @@
         </div>
         <p class="footer__copyright">
           © 2024 The Udacian Blog, made by
-          <a href="https://github.com/alaa-electr0n">Alaa Elsayed</a>
+          <a href="https://github.com/alaa-electr0n"
+            ><strong>Alaa Elsayed</strong></a
+          >
         </p>
       </footer>
     </div>
