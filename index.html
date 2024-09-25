@@ -8,13 +8,21 @@
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📰</text></svg>"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>Udacity Blog</title>
   </head>
   <body>
@@ -61,12 +69,16 @@
           <button class="ghost">View All</button>
         </div>
         <div class="carosel">
-          <button class="carosel-arrow" type="button">
-            <img
+          <button class="carosel-arrow" role="button">
+            <!-- <img
               src="./assests/svg/left-arrow.svg"
               alt="arrow"
               class="arrow-left"
-            />
+            /> -->
+            <i
+              class="fa-solid fa-circle-arrow-left fa-2xl"
+              style="--fa-primary-color: #001f45"
+            ></i>
           </button>
           <div class="featured__posts">
             <figure class="featured__post">
@@ -78,7 +90,7 @@
               <figcaption class="featured__post-content">
                 <div class="featured__post-header">
                   <h3 class="featured__post-title">
-                    <a href="./blog-post.html">
+                    <a href="./pages/blog-post.html">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </a>
                   </h3>
@@ -105,7 +117,7 @@
               <figcaption class="featured__post-content">
                 <div class="featured__post-header">
                   <h3 class="featured__post-title">
-                    <a href="./blog-post.html">
+                    <a href="./pages/blog-post.html">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </a>
                   </h3>
@@ -127,11 +139,15 @@
             <!-- add more posts here -->
           </div>
           <button class="carosel-arrow" role="button">
-            <img
+            <!-- <img
               src="./assests/svg/right-arrow.svg"
               alt="arrow"
               class="arrow-right"
-            />
+            /> -->
+            <i
+              class="fa-solid fa-circle-arrow-right fa-2xl"
+              style="--fa-primary-color: #001f45"
+            ></i>
           </button>
         </div>
       </section>
@@ -152,7 +168,7 @@
             <figcaption class="featured__post-content">
               <div class="featured__post-header">
                 <h3 class="featured__post-title">
-                  <a href="./blog-post.html">
+                  <a href="./pages/blog-post.html">
                     Lo rem ipsum dolor sit amet consectetur adipisicing elit.
                   </a>
                 </h3>
@@ -181,7 +197,7 @@
             <figcaption class="featured__post-content">
               <div class="featured__post-header">
                 <h3 class="featured__post-title">
-                  <a href="./blog-post.html">
+                  <a href="./pages/blog-post.html">
                     Lo rem ipsum dolor sit amet consectetur adipisicing elit.
                   </a>
                 </h3>
@@ -208,7 +224,7 @@
             <figcaption class="featured__post-content">
               <div class="featured__post-header">
                 <h3 class="featured__post-title">
-                  <a href="blog-post.html">
+                  <a href="./pages/blog-post.html">
                     Lo rem ipsum dolor sit amet consectetur adipisicing elit.
                   </a>
                 </h3>

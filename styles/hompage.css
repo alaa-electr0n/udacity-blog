@@ -125,7 +125,7 @@
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 2.4rem;
   padding-inline: 2.4rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   width: 80%;
 }
 
@@ -289,6 +289,9 @@
   }
   .catalog__posts figure.featured__post:first-child img.featured__post-image {
     height: 180px;
+  }
+  .carosel .carosel-arrow[role="button"] {
+    display: none;
   }
 }
 

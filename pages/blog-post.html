@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
     <title>Udacity Blog</title>
   </head>
   <body>
@@ -25,7 +25,7 @@
         <div class="header__search">
           <input type="text" placeholder="Search..." id="search" />
           <label for="search"
-            ><img src="assests/svg/search.svg" alt="search"
+            ><img src="../assests/svg/search.svg" alt="search"
           /></label>
         </div>
 
@@ -34,11 +34,11 @@
             <legend>Theme</legend>
             <input type="radio" id="light" name="theme" checked />
             <label for="light"
-              ><img src="assests/svg/sun.svg" alt="light"
+              ><img src="../assests/svg/sun.svg" alt="light"
             /></label>
             <input type="radio" id="dark" name="theme" />
             <label for="dark"
-              ><img src="assests/svg/moon.svg" alt="dark"
+              ><img src="../assests/svg/moon.svg" alt="dark"
             /></label>
           </fieldset>
         </form>
@@ -46,7 +46,7 @@
       <main class="main-post">
         <section class="breadcrumbs">
           <ul>
-            <li><a href="index.html">Home</a> <span> / </span></li>
+            <li><a href="../index.html">Home</a> <span> / </span></li>
             <li><a href="#">Post</a></li>
           </ul>
         </section>
@@ -54,7 +54,7 @@
           <header class="post__header">
             <div class="post__image">
               <img
-                src="./assests/img/article-3-wide.jpg"
+                src="../assests/img/article-3-wide.jpg"
                 alt="post image of fashion"
               />
             </div>
@@ -64,7 +64,7 @@
                 Quisquam, quos.
               </h2>
               <div class="post__author">
-                <img src="assests/img/author-1.jpg" alt="author image" />
+                <img src="../assests/img/author-1.jpg" alt="author image" />
                 <div class="post__author-info">
                   <div class="author">
                     <p class="post__author-name">Levi Ackramann</p>
@@ -83,23 +83,23 @@
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
               quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Fugit, repellendus voluptate ipsa porro voluptatibus dicta, ab
-              distinctio rem ratione sunt, molestias sit totam culpa cum? Error
-              quidem minus non iste.
+              <em>Fugit, repellendus voluptate ipsa porro voluptatibus dicta</em
+              >, ab <u>distinctio rem ratione sunt</u>, molestias sit totam
+              culpa cum? Error quidem minus non iste.
             </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quos. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Adipisci,
+              quos.<strong> Lorem ipsum dolor</strong>, sit amet consectetur
+              adipisicing elit. Adipisci,
               <span class="text-italic"
                 >harum atque officiis similique optio, reiciendis</span
               >
               temporibus expedita voluptas quasi alias magni ratione praesentium
-              ipsum laudantium et, natus reprehenderit nam. Voluptate!
+              ipsum laudantium et,<u> natus reprehenderit nam. Voluptate!</u>
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
-              enim molestiae
+              <em>Lorem ipsum dolor sit amet consectetur,</em> adipisicing elit.
+              Totam enim molestiae
               <span class="text-bold"
                 >necessitatibus blanditiis ipsa error. Recusandae beatae, dolor
                 distinctio</span
@@ -109,7 +109,7 @@
             </p>
 
             <section class="post__quote">
-              <q class="quote" cite="awsomequotes.com">
+              <q class="quote" cite="https://awsomequotes.com">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam, quos.
               </q>
@@ -143,31 +143,31 @@
             <ul>
               <li>
                 <a href="#">
-                  <img src="assests/svg/like.svg" alt="like" />
+                  <img src="../assests/svg/like.svg" alt="like" />
                 </a>
                 <span class="tooltip-text">Like</span>
               </li>
               <li>
                 <a href="#">
-                  <img src="assests/svg/share.svg" alt="share" />
+                  <img src="../assests/svg/share.svg" alt="share" />
                 </a>
                 <span class="tooltip-text">Share Link</span>
               </li>
               <li>
                 <a href="#">
-                  <img src="assests/svg/facebook.svg" alt="facebook" />
+                  <img src="../assests/svg/facebook.svg" alt="facebook" />
                 </a>
                 <span class="tooltip-text">Share on Facebook</span>
               </li>
               <li>
                 <a href="#">
-                  <img src="assests/svg/twitter.svg" alt="twitter" />
+                  <img src="../assests/svg/twitter.svg" alt="twitter" />
                 </a>
                 <span class="tooltip-text">Share on Twitter</span>
               </li>
               <li>
                 <a href="#">
-                  <img src="assests/svg/linkedin.svg" alt="linkedin" />
+                  <img src="../assests/svg/linkedin.svg" alt="linkedin" />
                 </a>
                 <span class="tooltip-text">Share on LinkedIn</span>
               </li>
@@ -190,7 +190,7 @@
         <section class="post__comments-list">
           <article class="comment">
             <div class="comment__header">
-              <img src="assests/svg/user.svg" alt="author image" />
+              <img src="../assests/svg/user.svg" alt="author image" />
               <span class="comment__user">Erin Yeger</span>
             </div>
             <p class="comment__text">
@@ -200,21 +200,23 @@
           </article>
           <article class="comment">
             <div class="comment__header">
-              <img src="assests/svg/user.svg" alt="author image" />
+              <img src="../assests/svg/user.svg" alt="author image" />
               <span class="comment__user">Oliver Queen</span>
             </div>
             <p class="comment__text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Necessitatibus reiciendis mollitia, dolore praesentium
-              voluptatibus reprehenderit? Eveniet modi minus enim. Libero et
-              vel, corporis distinctio provident amet eum voluptas tempore!
-              Veniam?
+              <u class="text-bold"
+                >voluptatibus reprehenderit? Eveniet modi minus enim.</u
+              >
+              Libero et vel, corporis distinctio provident amet eum voluptas
+              tempore! <b>Veniam?</b>
             </p>
           </article>
 
           <article class="comment">
             <div class="comment__header">
-              <img src="assests/svg/user.svg" alt="author image" />
+              <img src="../assests/svg/user.svg" alt="author image" />
               <span class="comment__user">Armin B. </span>
             </div>
             <p class="comment__text">
@@ -231,7 +233,10 @@
           <h3>Related Posts</h3>
           <div class="sidebar__post-list">
             <figure>
-              <img src="assests/img/article-6.jpg" alt="related post image" />
+              <img
+                src="../assests/img/article-6.jpg"
+                alt="related post image"
+              />
               <figcaption class="related-post__info">
                 <h4><a href="#">Lorem ipsum dolor sit </a></h4>
                 <p>
@@ -242,7 +247,10 @@
               </figcaption>
             </figure>
             <figure>
-              <img src="./assests/img/article-7.jpg" alt="related post image" />
+              <img
+                src="../assests/img/article-7.jpg"
+                alt="related post image"
+              />
               <figcaption class="related-post__info">
                 <h4><a href="#">Lorem ipsum dolor sit</a></h4>
                 <p>
@@ -253,7 +261,10 @@
               </figcaption>
             </figure>
             <figure>
-              <img src="./assests/img/article-8.jpg" alt="related post image" />
+              <img
+                src="../assests/img/article-8.jpg"
+                alt="related post image"
+              />
               <figcaption class="related-post__info">
                 <h4><a href="#">Lorem ipsum dolor sit </a></h4>
                 <p>
@@ -271,35 +282,35 @@
           <h3 class="logo">The Udacian Blog</h3>
           <ul class="footer__links">
             <li class="footer__link">
-              <a href="./index.html#featured">Featured</a>
+              <a href="../index.html#featured">Featured</a>
             </li>
             <li class="footer__link">
-              <a href="./index.html#catalog">Catalog</a>
+              <a href="../index.html#catalog">Catalog</a>
             </li>
             <li class="footer__link"><a href="./index.html">About</a></li>
             <li class="footer__link">
-              <a href="./index.html#subscribe">Subscribe</a>
+              <a href="../index.html#subscribe">Subscribe</a>
             </li>
           </ul>
           <ul class="footer__socials">
             <li class="footer__social">
               <a href="#"
-                ><img src="assests/svg/facebook.svg" alt="facebook"
+                ><img src="../assests/svg/facebook.svg" alt="facebook"
               /></a>
             </li>
             <li class="footer__social">
               <a href="#"
-                ><img src="assests/svg/twitter.svg" alt="twitter"
+                ><img src="../assests/svg/twitter.svg" alt="twitter"
               /></a>
             </li>
             <li class="footer__social">
               <a href="#"
-                ><img src="assests/svg/instagram.svg" alt="instagram"
+                ><img src="../assests/svg/instagram.svg" alt="instagram"
               /></a>
             </li>
             <li class="footer__social">
               <a href="#"
-                ><img src="assests/svg/youtube.svg" alt="youtube"
+                ><img src="../assests/svg/youtube.svg" alt="youtube"
               /></a>
             </li>
           </ul>
